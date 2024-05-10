@@ -6,15 +6,6 @@
       "EXPOSE 5678",
       "COPY ./packages /n8n_data/packages"
     ],
-    "volumes": [
-      {
-        "containerPath": "$$cap_appname-data:/n8n_data/uploads",
-        "volumeName": "uploads"
-      },
-      {
-        "containerPath": "/directus/extensions",
-        "volumeName": "extensions"
-      }
-    ],
+   
     "hasPersistentData": true
   }
