@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 2,
+    "dockerfileLines": [
+      "FROM directus/n8n:1.41.0",
+      "WORKDIR /n8n_data",
+      "EXPOSE 5678",
+      "COPY ./packages /n8n_data/packages"
+    ],
+    "volumes": [
+      {
+        "containerPath": "$$cap_appname-data:/n8n_data/uploads",
+        "volumeName": "uploads"
+      },
+      {
+        "containerPath": "/n8n_data/extensions",
+        "volumeName": "extensions"
+      }
+    ],
+    "hasPersistentData": true
+  }
