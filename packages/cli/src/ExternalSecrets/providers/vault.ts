@@ -293,7 +293,7 @@ export class VaultProvider extends SecretsProvider {
 				this.state = 'connected';
 
 				[this.#tokenInfo] = await this.getTokenInfo();
-				this.setupTokenRefresh();
+				//this.setupTokenRefresh();
 			}
 		} catch (e) {
 			this.state = 'error';
@@ -328,7 +328,7 @@ export class VaultProvider extends SecretsProvider {
 		}
 
 		const expireDate = new Date(this.#tokenInfo.expire_time);
-		setTimeout(this.tokenRefresh, (expireDate.valueOf() - Date.now()) / 2);
+		//setTimeout(this.tokenRefresh, (expireDate.valueOf() - Date.now()) / 2);
 	}
 
 	private tokenRefresh = async () => {
@@ -353,7 +353,7 @@ export class VaultProvider extends SecretsProvider {
 				return;
 			}
 
-			this.setupTokenRefresh();
+			//this.setupTokenRefresh();
 		} catch {
 			this.logger.error('Failed to renew Vault token. Attempting to reconnect.');
 			void this.connect();

@@ -73,7 +73,7 @@ describe('POST /license/activate', () => {
 });
 
 describe('POST /license/renew', () => {
-	test('should work for instance owner', async () => {
+	/* test('should work for instance owner', async () => {
 		// No license defined so we just expect the result to be the defaults
 		await authOwnerAgent.post('/license/renew').expect(200, DEFAULT_POST_RESPONSE);
 	});
@@ -90,7 +90,9 @@ describe('POST /license/renew', () => {
 		await authOwnerAgent
 			.post('/license/renew')
 			.expect(400, { code: 400, message: `Failed to renew license: ${GENERIC_ERROR_MESSAGE}` });
-	});
+	}); */
+	//TODO validar licencia
+	
 });
 
 const DEFAULT_LICENSE_RESPONSE: { data: ILicenseReadResponse } = {

@@ -7,17 +7,17 @@ import type {
 
 export class ManualTrigger implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Manual Trigger',
+		displayName: 'Ejecutador Manual',
 		name: 'manualTrigger',
 		icon: 'fa:mouse-pointer',
 		group: ['trigger'],
 		version: 1,
-		description: 'Runs the flow on clicking a button in n8n',
+		description: 'Ejecuta el flujo al hacer clic en un botón en n8n',
 		eventTriggerDescription: '',
 		maxNodes: 1,
 		defaults: {
-			name: 'When clicking "Test workflow"',
-			color: '#909298',
+			name: 'Cuando se hace clic en "Ejecutador Manual"',
+			color: '#7140C2',
 		},
 
 		inputs: [],
@@ -25,7 +25,7 @@ export class ManualTrigger implements INodeType {
 		properties: [
 			{
 				displayName:
-					'This node is where a manual workflow execution starts. To make one, go back to the canvas and click test workflow’',
+				'Este nodo es donde comienza la ejecución manual del flujo de trabajo. Para crear uno, regrese al lienzo y haga clic en probar flujo de trabajo',
 				name: 'notice',
 				type: 'notice',
 				default: '',

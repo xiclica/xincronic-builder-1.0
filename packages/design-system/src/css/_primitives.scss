@@ -29,9 +29,9 @@
 	--prim-gray-0: hsl(var(--prim-gray-h), 50%, 100%);
 
 	// Color Primary
-	--prim-color-primary-h: 7;
-	--prim-color-primary-s: 100%;
-	--prim-color-primary-l: 68%;
+	--prim-color-primary-h: 257;
+	--prim-color-primary-s: 52%;
+	--prim-color-primary-l: 38%;
 
 	--prim-color-primary-shade-300: hsl(
 		var(--prim-color-primary-h),
@@ -76,9 +76,9 @@
 	);
 
 	// Color Secondary
-	--prim-color-secondary-h: 247;
-	--prim-color-secondary-s: 49%;
-	--prim-color-secondary-l: 53%;
+	--prim-color-secondary-h: 201;
+	--prim-color-secondary-s: 52%;
+	--prim-color-secondary-l: 38%;
 
 	--prim-color-secondary-shade-250: hsl(
 		var(--prim-color-secondary-h),
@@ -129,16 +129,16 @@
 	);
 
 	// Color Alternate A
-	--prim-color-alt-a-h: 150;
-	--prim-color-alt-a-s: 60%;
-	--prim-color-alt-a-l: 40%;
+	--prim-color-alt-a-h: 262;
+	--prim-color-alt-a-s: 63%;
+	--prim-color-alt-a-l: 58%;
 
 	--prim-color-alt-a-shade-200: hsl(
 		var(--prim-color-alt-a-h),
 		calc(var(--prim-color-alt-a-s) - 15%),
 		calc(var(--prim-color-alt-a-l) - 20%)
 	);
-	--prim-color-alt-a-shade-100: hsl(
+	--prim-color-alt-a-shade-100: hsl(	
 		var(--prim-color-alt-a-h),
 		calc(var(--prim-color-alt-a-s) - 15%),
 		calc(var(--prim-color-alt-a-l) - 10%)

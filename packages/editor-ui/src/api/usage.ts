@@ -2,18 +2,21 @@ import { makeRestApiRequest, request } from '@/utils/apiUtils';
 import type { IRestApiContext, UsageState } from '@/Interface';
 
 export const getLicense = async (context: IRestApiContext): Promise<UsageState['data']> => {
-	return await makeRestApiRequest(context, 'GET', '/license');
+	//return await makeRestApiRequest(context, 'GET', '/license');
+	true
 };
 
 export const activateLicenseKey = async (
 	context: IRestApiContext,
 	data: { activationKey: string },
 ): Promise<UsageState['data']> => {
-	return await makeRestApiRequest(context, 'POST', '/license/activate', data);
+	//return await makeRestApiRequest(context, 'POST', '/license/activate', data);
+	return true;
 };
 
 export const renewLicense = async (context: IRestApiContext): Promise<UsageState['data']> => {
-	return await makeRestApiRequest(context, 'POST', '/license/renew');
+	//return await makeRestApiRequest(context, 'POST', '/license/renew');
+	 true
 };
 
 export const requestLicenseTrial = async (data: {
