@@ -12,7 +12,7 @@
         "volumeName": "uploads"
       },
       {
-        "containerPath": "/n8n_data/extensions",
+        "containerPath": "/directus/extensions",
         "volumeName": "extensions"
       }
     ],
